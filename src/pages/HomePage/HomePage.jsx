@@ -25,7 +25,6 @@ export default function HomePage() {
         setError(false);
 
         const data = await getAllMovies(page);
-        console.log("Fetched movies:", data.results);
 
         setMovies((prevMovies) => {
           if (prevPageRef.current && prevPageRef.current !== page - 1) {
@@ -37,7 +36,6 @@ export default function HomePage() {
         setTotalPages(data.total_pages);
       } catch (error) {
         setError(true);
-        console.log(error);
       } finally {
         setLoading(false);
       }
@@ -48,8 +46,6 @@ export default function HomePage() {
     }
     prevPageRef.current = page;
   }, [page]);
-
-  console.log("Rendered movies:", movies);
 
   return (
     <main>

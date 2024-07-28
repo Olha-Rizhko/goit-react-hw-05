@@ -12,7 +12,6 @@ export async function getAllMovies(page) {
   };
 
   const response = await axios.get(url, options);
-  console.log("API response:", response.data); // Додано для налагодження
   return response.data;
 }
 

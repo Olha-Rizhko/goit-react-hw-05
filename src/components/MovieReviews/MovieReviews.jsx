@@ -25,7 +25,6 @@ export default function MovieReviews() {
         setReviews(data.results);
       } catch (error) {
         setError(true);
-        console.log(error);
       } finally {
         setLoading(false);
       }

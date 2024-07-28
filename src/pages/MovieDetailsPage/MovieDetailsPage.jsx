@@ -37,7 +37,6 @@ export default function MovieDetailsPage() {
       handleFetch();
     } catch (error) {
       setError(true);
-      console.log(error);
     }
   }, [movieId]);
 
