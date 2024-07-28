@@ -1,0 +1,25 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.poster {
+  margin-bottom: 4px;
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.title {
+  color: #2a4362;
+  font-weight: 600;
+  margin-bottom: 4px;
+  max-width: 100%;
+}
+
+.date {
+  color: #2a4362;
+  font-size: 16px;
+}

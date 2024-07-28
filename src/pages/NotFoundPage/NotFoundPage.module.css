@@ -1,0 +1,30 @@
+.section {
+  padding: 100px 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text {
+  color: #2a4362;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.link {
+  color: #2a4362;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: transform 250ms ease-in-out;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}

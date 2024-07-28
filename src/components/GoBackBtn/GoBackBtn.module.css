@@ -1,0 +1,14 @@
+.button {
+  color: #2a4362;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  left: 32px;
+  transition: transform 250ms ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}

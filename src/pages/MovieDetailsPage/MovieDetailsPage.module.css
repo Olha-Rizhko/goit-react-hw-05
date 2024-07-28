@@ -1,0 +1,93 @@
+.section {
+  padding: 40px 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  position: relative;
+}
+
+.mainPage {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 40px;
+  max-width: 590px;
+}
+
+.subtitle {
+  font-size: 16px;
+}
+
+.genresDetails,
+.countryDetails,
+.language,
+.duration,
+.vote {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.genresList,
+.countryList {
+  display: flex;
+  gap: 5px;
+}
+
+.genreItem,
+.countryItem {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.countryItem:not(:last-of-type):after {
+  content: "&";
+}
+
+.genreText {
+  text-transform: capitalize;
+}
+
+.descriptionWrapper {
+  max-width: 590px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.movieSubtitle {
+  font-size: 16px;
+}
+
+.additionalInfo {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.navLink {
+  color: #2a4362;
+  font-size: 16px;
+  transition: text-decoration 250ms ease-in-out, color 250ms ease-in-out,
+    transform 250ms ease-in-out;
+}
+
+.navLink:hover {
+  transform: scale(1.1);
+}
+
+.activeNavLink {
+  color: #2a4362;
+  text-decoration: underline;
+  text-decoration-color: #2a4362;
+}
